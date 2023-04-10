@@ -2,7 +2,7 @@
 	import { Footer, FooterBrand, FooterCopyright, FooterIcon, FooterLink, FooterLinkGroup } from "flowbite-svelte";
 </script>
   
-  <Footer footerType="socialmedia" class="bg-slate-700 mb-0">
+  <Footer footerType="socialmedia" class="bg-slate-600 mb-0">
     <div class="md:flex md:justify-between ">
       <div class="md:mb-0">
         <FooterBrand

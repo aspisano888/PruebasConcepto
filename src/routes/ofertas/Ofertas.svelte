@@ -1,10 +1,10 @@
 <script>
     import Food from '../Food.svelte';
-    import Navegator from '../navegator/Navegator.svelte';
+    import Navegator from '../Navegator.svelte';
 </script>
 
 <Navegator/>
-<div>
+<div class="p-20">
   
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
     <div>
