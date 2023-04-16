@@ -17,7 +17,7 @@
 </script>
 
 <h4 class="text-center text-orange-700 underline decoration-double uppercase text-lg">Algunas marcas</h4>
-<div class="grid grid-cols-5 gap-5">
+<div class=" flex-1 grid grid-cols-5 gap-5">
     {#each marcas as marca}
     <Card padding="none">
         <a href="/"><img class="p-8 rounded-t-lg" src="{marca.image}"  alt="product"/></a>

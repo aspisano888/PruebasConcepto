@@ -3,23 +3,23 @@
     import Navegator from '../Navegator.svelte';
     import { Card } from "flowbite-svelte";
     import { Img } from 'flowbite-svelte';
-    
-    let hCard = false;
+    const imgUrl = new URL('../../lib/images/logoSm.png', import.meta.url).href
+    let hCard = true;
 </script>
 
 <Navegator/>
-<div  class="bg-gradient-to-r from-sky-500 to-indigo-500 mx-32">
-  <div><h2 class="pt-32 px-20 text-teal-200 overline font-bold text-4xl">Cuchos' Market</h2></div>
-  <div class="sm-flex" >
-    <div class="sm-flex my-24 mx-64">
-      <Card img="../imagenes/logoSm.png" href="/" horizontal reverse={hCard}>
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nosotros</h5>
+<div class="flex"><h2 class="pt-32 px-20 text-teal-400 overline font-bold text-4xl">Cuchos' Market</h2></div>
+<div  class="sm-flex bg-gradient-to-r from-sky-500 to-indigo-500 justify-center">
+  <div>
+    <div class="sm-flex pt-20">
+      <Card img="" href="/" horizontal reverse={hCard}>
+        <img src="{imgUrl}" alt="logo" class="text-left w-44">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight">
           Somos una cadena de superemercados que ofrece los mejores productos del mercado a su hogar. Nos destacamos por cumplir las necesidades de nuestros clientes los 365 dias del año, en cualquier parte del pais.
         </p>
       </Card>
     </div>
-    <div class="sm-flex mx-72 my-5 w-1/2 pb-20 pt-0">
+    <div class="sm-flex w-1/2 pb-20 pt-0">
       <Card padding="none" size="xl" class="flex-auto grid md:grid-cols-2">
         <figure class="flex flex-col justify-center items-center p-8 text-center bg-white rounded-t-lg border-b border-gray-200 md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
           <blockquote class="mx-auto mb-4 max-w-2xl text-gray-500 dark:text-gray-400">

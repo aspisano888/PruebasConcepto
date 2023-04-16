@@ -4,32 +4,17 @@
     import Navegator from './Navegator.svelte';
     import Navegator1 from './Navegator1.svelte';
 	import Marcas from './Marcas.svelte';
-	import { Img } from 'flowbite-svelte';
-	
-	const items = new Array();
-	
-	for(let i = 0; i < 10; i++) 
-	{
-		let obj = {
-			name: 'Product ' + i,
-			description: 'Lorem ipsum dolor sit amet',
-			price: 102 + i,
-			iso: 'USD',
-			stars: 3,
-			img: 'https://dummyimage.com/200x200/fff/000'
-		};
-	
-		items.push(obj);
-	}
+	const imgUrl = new URL('../lib/images/logo.png', import.meta.url).href
 </script>
+
 <div class="relative"><Navegator/></div>
 	<div>
-		<div class="bg-teal-800 p-20">
+		<div class="bg-teal-900 p-0">
 			<div class="pt-20">
-				<div class="bg-teal-800 flex justify-center">
+				<div class="bg-teal-700 flex justify-center">
 					<img
-					src="./imagenes/logo.png"
-					class="bg-teal-800 text-center"
+					src="{imgUrl}"
+					class="bg-teal-700 text-center"
 					alt="cucho's"
 					/>
 			</div>

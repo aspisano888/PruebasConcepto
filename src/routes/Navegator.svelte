@@ -4,7 +4,7 @@
 
 </script>
 <div class="fixed top-0 left-0 right-0">
-  <Navbar let:hidden let:toggle class="bg-teal-900">
+  <Navbar let:hidden let:toggle class="bg-teal-600">
     <DarkMode />
 
     <NavHamburger on:click={toggle} />
